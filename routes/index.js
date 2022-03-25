@@ -6,11 +6,14 @@ const auth ='Basic cHViX29hbWZ1Y215eWJkeXdtZWVrbDpwa19mNGZiZmE4NC02YzQzLTQzY2MtO
 const model_id = "ecc9388c-51d1-4c8a-8674-c0a6be2e9149"
 let kanyeQuote
 let uuid
+let audioFile
+let first = []
+let speakReq = `?uuid=${first[0]}`
 
 const rootURL = 'https://api.kanye.rest'
 const voiceURL = 'https://api.uberduck.ai/voices'
 const speakURL = 'https://api.uberduck.ai/speak'
-
+const speakStatus = 'https://api.uberduck.ai/speak-status'
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -19,8 +22,8 @@ router.get('/', function(req, res, next) {
   .then(function(quotes) {
     kanyeQuote = quotes.quote
     // console.log(kanyeQuote) 
-    res.render('index', {title: "Kanye West's Best Quotes Fest", quotes} )
   })
+
   const options = {
     method: 'POST',
     headers: {
@@ -39,9 +42,25 @@ router.get('/', function(req, res, next) {
     .then(response => response.json())
     .then(response => {
       uuid = response
-      console.log(uuid)
+      first = Object.values(uuid)
+      console.log(first[0])
     })
     .catch(err => console.error(err));
+
+  const options2 = {method: 'GET', headers: {Accept: 'application/json'}};
+
+  setTimeout(() => {
+  fetch(`${speakStatus}?uuid=${first}`, options2)
+    .then(res => res.json())
+    .then(function(response) {
+      audioFile = response
+      audioFile = audioFile.path
+      console.log(audioFile)
+      res.render('index', {title: "Kanye West's Best Quotes Fest", kanyeQuote, audioFile} )
+    })
+    .catch(err => console.error(err));
+  }, 1000);
+
 }) 
 
 

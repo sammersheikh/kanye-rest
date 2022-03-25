@@ -11,3 +11,6 @@ the model_id changes so i need to grab it each time and set it dynamically
 8. Store .wav file into variable and pass it down to view render
 9. Figure out how to make audio play on screen load
 10. Nice!
+
+problem: uuid is a string so when i add it to the link it adds extra quotes around the uuid when theres already string interpolation around the links
+
