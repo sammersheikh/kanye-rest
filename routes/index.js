@@ -30,6 +30,7 @@ router.get('/', function(req, res, next) {
     },
     body: JSON.stringify({
       speech: kanyeQuote,
+      voice: "kanye-west-rap",
       model_id: model_id,
       pace: 1,
     })
