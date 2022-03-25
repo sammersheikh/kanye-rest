@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kanye West Quote Fest</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="./public/javascripts/script.js"></script> -->
+    
+</head>
+<body class="container">
+  <h1 class="jumbotron text-center"><%= title %></h1>
+  <div id="quote">
+    <h2><%= JSON.stringify(quotes.quote) %></h2>
+  </div>
+    <div id="yeImg">
+    <a href="https://ibb.co/GTnNKsV"><img src="https://i.ibb.co/167jDs9/Marantz-Kanye-VMA-Speech.jpg" alt="Marantz-Kanye-VMA-Speech" border="0"></a>
+  </div>
+    <div class="center">
+      <div class="vertical-center">
+        <button id="newBtn">New Quote</button>
+      </div>
+    </div>
+    <script>
+      $('#newBtn').on('click', function() {
+    location.reload()
+      })
+    </script>
+</body>
+</html>
