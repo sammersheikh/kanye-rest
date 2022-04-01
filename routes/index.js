@@ -47,7 +47,7 @@ router.get('/', async function(req, res, next) {
         console.log(first[0])
       })
       .catch(err => console.error(err));
-    // setTimeout(() => {
+    setTimeout(() => {
 
     fetch(`${speakStatus}?uuid=${first}`, options2)
       .then(res => res.json())
@@ -55,14 +55,14 @@ router.get('/', async function(req, res, next) {
         audioFile = response
         audioFile = audioFile.path
         console.log(audioFile)
-        if (audioFile) {
+        // if (audioFile) {
         res.render('index', {title: "Kanye West's Best Quotes Fest", kanyeQuote, audioFile} )
-        } else if (audioFile === null) {
-          res.redirect('/')
-        }
+        // } else if (audioFile === null) {
+          // res.redirect('/')
+        // }
       }).catch(err => console.error(err));
     
-      // }, 4000);
+      }, 4000);
     })
 
 }) 
