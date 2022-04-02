@@ -37,30 +37,30 @@ router.get('/', async function(req, res, next) {
         pace: 1,
       })
     };
-    // const options2 = {method: 'GET', headers: {Accept: 'application/json'}};
+    const options2 = {method: 'GET', headers: {Accept: 'application/json'}};
  
-    // fetch('https://api.uberduck.ai/speak', options)
-    //   .then(response => response.json())
-    //   .then(response => {
-    //     uuid = response
-    //     first = Object.values(uuid)
-    //     console.log(first[0])
-    //   })
-    //   .catch(err => console.error(err));
-    // setTimeout(() => {
+    fetch('https://api.uberduck.ai/speak', options)
+      .then(response => response.json())
+      .then(response => {
+        uuid = response
+        first = Object.values(uuid)
+        console.log(first[0])
+      })
+      .catch(err => console.error(err));
+    setTimeout(() => {
 
-    // fetch(`${speakStatus}?uuid=${first}`, options2)
-    //   .then(res => res.json())
-    //   .then(function(response) {
-    //     audioFile = response
-    //     audioFile = audioFile.path
-    //     console.log(audioFile)
-    //     // if (audioFile) {
+    fetch(`${speakStatus}?uuid=${first}`, options2)
+      .then(res => res.json())
+      .then(function(response) {
+        audioFile = response
+        audioFile = audioFile.path
+        console.log(audioFile)
+        // if (audioFile) {
           res.render('index', {title: "speakYeezy", kanyeQuote, audioFile} )
-    //       // } 
-    //     })
+          // } 
+        })
         
-    //     }, 4000);
+        }, 4000);
     })
 
 }) 
