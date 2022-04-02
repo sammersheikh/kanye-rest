@@ -1,23 +1,52 @@
 @import url(http://mcansh.github.io/yeezy-logo-font/assets/css/font.css);
 
 body {
-
+  background-image: url("https://i.ibb.co/7n3BJzL/yeezy-Zebra-Bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   padding: 50px;
   font-family: 'Monda', sans-serif;
-  font-size: 20px;
+  font-size: 40px;
+  
+  /* color: #FF5F1F; */
+  /* -webkit-text-stroke: 6px white; */
 }
+
+.aud {
+  margin-top: 50px;
+}
+
+.playTxt, h3 {
+  color: tan;
+  text-shadow: 4px 4px black;
+  font-size: 40px;
+}
+
 
 a {
   color: #00B7FF;
 }
 
 .title {
+  margin-top: -40px;
+  color: tan;
+  text-shadow: 14px 14px black;
+  display: block;
   text-align: center;
   font-family: 'Monda', sans-serif;
-  font-size: 80px;
+  font-size: 130px;
 }
 
-h1 {
+.quoteDiv {
+  text-align: center;
+  margin-top: 40px;
+  /* width: 100%;
+  height: auto; */
+  /* word-break: break-all; */
+  color: tan;
+  text-shadow: 8px 8px black;
+  /* -webkit-text-stroke: 4px white; */
   @font-face {
     font-family: 'Yeezy';
     src: url("../../fonts/yeezy_tstar-bold-webfont.ttf");
@@ -26,9 +55,21 @@ h1 {
     font-weight: bold; }
 }
 
-/* h2 {
-  text-align: center;
-} */
+h1 {
+  font-size: 60px;
+}
+
+footer {
+   bottom:0;
+   width:100%;
+   height:60px;
+   color: tan;
+  text-shadow: 4px 4px black;
+  font-size: 30px;
+  margin-top: 40px;
+  /* text-align:center; */
+} 
+
 .center {
   display: flex;
   justify-content: center;
@@ -36,26 +77,27 @@ h1 {
   height: 200px;
 }
 
-#quote {
+/* #quote {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 150px;
-}
+} */
 
 #yeImg {
+  opacity: 0.9;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 25px;
 }
 
-img {
+/* #yeImg {
       box-shadow: 10px 10px 5px #ccc;
       -moz-box-shadow: 10px 10px 5px #ccc;
       -webkit-box-shadow: 10px 10px 5px #ccc;
       -khtml-box-shadow: 10px 10px 5px #ccc;
-    }
+    } */
 
 
 /* CSS */
@@ -64,23 +106,25 @@ img {
 
 /* CSS */
 .button-28 {
+  color: tan;
+  text-shadow: 4px 4px black;
   appearance: none;
   background-color: transparent;
-  border: 2px solid #1A1A1A;
+  border: 4px solid tan;
+  box-shadow: 6px 6px black;
   border-radius: 15px;
   box-sizing: border-box;
-  color: #3B3B3B;
   cursor: pointer;
   display: inline-block;
   font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 36px;
+  font-size: 56px;
   font-weight: 600;
   line-height: normal;
   margin: 0;
   min-height: 60px;
   min-width: 0;
   outline: none;
-  padding: 36px 44px;
+  padding: 46px 54px;
   text-align: center;
   text-decoration: none;
   transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
