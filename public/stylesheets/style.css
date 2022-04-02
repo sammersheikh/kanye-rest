@@ -7,9 +7,11 @@ a {
   color: #00B7FF;
 }
 
-h2 {
+
+
+/* h2 {
   text-align: center;
-}
+} */
 .center {
   display: flex;
   justify-content: center;
@@ -41,6 +43,7 @@ img {
 
 /* CSS */
 #newBtn {
+
   align-items: center;
   appearance: none;
   background-color: #FCFCFD;
@@ -52,15 +55,15 @@ img {
   cursor: pointer;
   display: inline-flex;
   font-family: "JetBrains Mono",monospace;
-  height: 48px;
+  height: 70px;
   justify-content: center;
   line-height: 1;
   list-style: none;
   overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 22px;
+  padding-right: 22px;
   position: relative;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
   transition: box-shadow .15s,transform .15s;
   user-select: none;
@@ -68,7 +71,7 @@ img {
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow,transform;
-  font-size: 18px;
+  font-size: 38px;
 }
 
 #newBtn:focus {
@@ -84,3 +87,11 @@ img {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
 }
+/* 
+@media only screen and (min-width: 500px) {
+  .newBtn {
+    height: 80px;
+    padding: 30px;
+    font-size: 28px;
+  }
+} */
