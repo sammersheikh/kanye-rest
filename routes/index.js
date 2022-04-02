@@ -60,7 +60,7 @@ router.get('/', async function(req, res, next) {
           // } 
         })
         
-        }, 3000);
+        }, 4000);
     })
 
 }) 
