@@ -22,7 +22,11 @@
         <button id="newBtn">Generate Quote</button>
       </div>
     </div> 
+      <% if (!audioFile) { %>
+        <h3>No audio, click Generate Quote</h3>
+        <% } else if (audioFile) { %>
     <h2>Click Play!</h2>
+    <% } %>
     <audio id="player" controls autoplay>
       <source src="<%= audioFile %>" type="audio/wav">
     </audio>   
@@ -30,6 +34,7 @@
 
       $('#newBtn').on('click', function() {
         // $('#audio').play()
+        // $('h3').text('Click this button')
         location.reload()
       })
 
