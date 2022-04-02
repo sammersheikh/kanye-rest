@@ -56,7 +56,7 @@ router.get('/', async function(req, res, next) {
         audioFile = audioFile.path
         console.log(audioFile)
         // if (audioFile) {
-          res.render('index', {title: "Kanye West's Best Quotes Fest", kanyeQuote, audioFile} )
+          res.render('index', {title: "speakYeezy", kanyeQuote, audioFile} )
           // } 
         })
         

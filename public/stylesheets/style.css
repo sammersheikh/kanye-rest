@@ -1,13 +1,30 @@
+@import url(http://mcansh.github.io/yeezy-logo-font/assets/css/font.css);
+
 body {
+
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Monda', sans-serif;
+  font-size: 20px;
 }
 
 a {
   color: #00B7FF;
 }
 
+.title {
+  text-align: center;
+  font-family: 'Monda', sans-serif;
+  font-size: 80px;
+}
 
+h1 {
+  @font-face {
+    font-family: 'Yeezy';
+    src: url("../../fonts/yeezy_tstar-bold-webfont.ttf");
+    src: url("../../fonts/yeezy_tstar-bold-webfont.woff") format("woff"),
+         url("../../fonts/yeezy_tstar-heavy-webfont.eot") format("eot");
+    font-weight: bold; }
+}
 
 /* h2 {
   text-align: center;
