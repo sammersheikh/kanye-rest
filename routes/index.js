@@ -56,16 +56,15 @@ router.get('/', async function(req, res, next) {
         audioFile = audioFile.path
         console.log(audioFile)
         // if (audioFile) {
-        res.render('index', {title: "Kanye West's Best Quotes Fest", kanyeQuote, audioFile} )
-        // } else if (audioFile === null) {
-          // res.redirect('/')
-        // }
-      }).catch(err => console.error(err));
-    
-      }, 4000);
+          res.render('index', {title: "Kanye West's Best Quotes Fest", kanyeQuote, audioFile} )
+          // } 
+        })
+        
+        }, 3000);
     })
 
 }) 
+
 
 
 // {
