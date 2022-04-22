@@ -1,7 +1,7 @@
-@import url(http://mcansh.github.io/yeezy-logo-font/assets/css/font.css);
 
 body {
-  background-image: url("https://i.ibb.co/7n3BJzL/yeezy-Zebra-Bg.png");
+  /* background-image: url("https://i.ibb.co/7n3BJzL/yeezy-Zebra-Bg.png"); */
+  background-color: black;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -90,6 +90,8 @@ footer {
   justify-content: center;
   align-items: center;
   margin-top: 25px;
+  max-width: 100%;
+  height: auto;
 }
 
 /* #yeImg {
@@ -150,3 +152,35 @@ footer {
   box-shadow: none;
   transform: translateY(0);
 } 
+
+@media only screen and (min-width: 1068px) {
+  body {
+    font-size: 20px;
+  }
+  .title {
+    font-size: 60px;  
+  }
+  .playTxt, h3 {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .center {
+    height: 100px;
+  }
+  #yeImg {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  img {
+    width: 70%;
+    
+  }
+  .button-28 {
+    font-size: 30px;
+    min-height: 30px;
+    padding: 26px 34px;
+    margin-top: 5px;
+  }
+}
